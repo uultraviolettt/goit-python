@@ -1,1 +1,3 @@
-#task 1
+name = input('Enter your name, please:')
+res = f"Hello, {name} !"
+print (res)
