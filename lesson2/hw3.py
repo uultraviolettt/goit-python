@@ -30,6 +30,7 @@ while oper != "=":
     while oper not in ("+", "-", "/", "+", "="):
         print("What do u mean? I expected +, -, *, / or = ")
         oper = input("Please, enter an operator: ")
+        # check length of entered operator
         oper1 = oper.split(' ')
         if len(oper1) == 1:
             oper = oper
