@@ -8,7 +8,7 @@ res = 0
 
 while True:
     try:
-        op1 = input()
+        op1 = float(input())
     except ValueError:
         print("I am a joke to you???)))")
     finally:
