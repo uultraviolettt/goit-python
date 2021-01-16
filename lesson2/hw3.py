@@ -30,7 +30,3 @@ while True:
         elif "=":
             print("n")
             break
-        else:
-            break
-    else:
-
