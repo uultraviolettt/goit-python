@@ -30,3 +30,13 @@ while True:
         elif "=":
             print("n")
             break
+<<<<<<< HEAD
+=======
+        else:
+            break
+    else:
+
+
+
+
+>>>>>>> bbf266e29014014d1896849c6ba3d0dbeb41f24b
