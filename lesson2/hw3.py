@@ -2,38 +2,39 @@ print("Hello! You can calculate smth here, but be attentive ^-^")
 print("What would u like to calculate?")
 print("At first, enter one number, that enter one operator and one more number and one more operator.../n")
 
-op1 = 0
-op2 = 0
 res = 0
+oper = None
 
-while True:
+while oper != "=":
     try:
-        op1 = float(input())
+        num = float(input("Please, enter a number: "))
     except ValueError:
         print("I am a joke to you???)))")
-    finally:
-        op_1 = op1.split(' ')
-        if len(op_1) == 1:
-            op1 = op1
-        else:
-            print(f"Oops! You entered too many numbers :( Enter your number again, please.")
-            op1 = float(input())
 
-    oper = input()
-    oper1 = oper.split(' ')
-    if len(oper1) == 1:
-        oper = oper
-        if "+" or "-" or "/" or "+":
+    if oper is None:
+        res = num
+    elif oper == "+":
+        res += num
+    elif oper == "-":
+        res -= num
+    elif oper == "*":
+        res *= num
+    elif oper == "/":
+        try:
+            res /= num
+        except ZeroDivisionError:
+            print("Okay, I know, miracles happen, but not zero division. So, try again ")
             continue
-        elif not "=":
+
+    oper = input("Please, enter an operator: ")
+    while oper not in ("+", "-", "/", "+", "="):
+        print("What do u mean? I expected +, -, *, / or = ")
+        oper = input("Please, enter an operator: ")
+        # check length of entered operator
+        oper1 = oper.split(' ')
+        if len(oper1) == 1:
+            oper = oper
             continue
-        elif "=":
-            print("n")
-            break
-        else:
-            break
-    else:
-
-
-
-
+    if oper == "=":
+        continue
+print(f"result = {res}")
