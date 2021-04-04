@@ -132,7 +132,7 @@ ad.add_record(rec)
 
 print(ad)
 
-ph2 = Phone('0678945316')
+ph2 = Phone('0678945274')
 rec1 = Record(Name('Mirta'), ph2)
 ad.add_record(rec1)
 
