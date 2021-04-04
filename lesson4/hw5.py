@@ -53,7 +53,7 @@ def main():
     sort_folder(path)
 
 
-if name == 'main':
+if __name__ == '__main__':
     main()
 
 print(f"Image files: {image_files} \n"
