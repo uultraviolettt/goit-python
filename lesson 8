@@ -33,6 +33,7 @@ def print_result(b_dict):
         result += i + ': '
         for m in b_dict[i]:
             result += m[0]
+            
             if m[0] != b_dict[i][-1][0]:
                 result += ', '
         result += '\n'
