@@ -60,7 +60,7 @@ print(f"Image files: {image_files} \n"
       f"Document files: {document_files} \n"
       f"Video files: {video_files} \n"
       f"Music files: {music_files} \n"
-      f"Archieve files: {arch_files} \n"
+      f"Archive files: {arch_files} \n"
       f"Unknown files or folders: {unknown_ff} \n"
       )
 print(
